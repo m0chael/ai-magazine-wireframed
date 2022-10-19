@@ -1,0 +1,29 @@
+.article main {
+  padding-top:5rem;
+  padding-bottom:5rem;
+}
+
+.header-section-wrapper p {
+  padding:0;
+  margin:0;
+}
+
+@media screen and (min-width:700px) {
+  .article main {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  main article.article-full-section {
+    grid-column: 2/5;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .article main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  main article.article-full-section {
+    grid-column: 2/6;
+    margin:0 auto;
+  }
+}

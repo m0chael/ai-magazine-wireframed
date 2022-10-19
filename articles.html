@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles | AI Weekly Magazine</title>
+  <link rel="icon" type="image/png" href="images/favicon/stable_diffusion_favicon.png">
+  <link rel="stylesheet" href="css/common-styles.css">
+  <link rel="stylesheet" href="css/articles-directory-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+</head>
+<!-- Body classes to be specific about which page the site is on, helps for styling specific pages -->
+<body class="articles-directory">
+  <!-- Nav is outside of header as it has sticky position, and needs to be it's own parent container -->
+  <nav>
+    <!-- Search form setup to send to an endpoint called search-magazine.php, which does not exist yet -->
+    <form class="search-form" action="search-magazine.php">
+      <label for="search-text">Search magazine:</label>
+      <input type="text" id="search-text" name="search-text" class="search-text-input" placeholder="Search now...">
+      <input class="search-submit-input" type="submit" value="Search">
+    </form>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="articles/featured.html">&#x2605;</a></li>
+      <li><a class="selected" href="articles.html">Articles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header section of the contact form -->
+  <header>
+    <section>
+      <figure>
+        <img src="images/stable_diffusion_replicate9.jpg" alt="A Stable Diffusion Sci-Fi scene depicting a spaceship lying in water with some large rectangular pipes going up into the air.">
+        <figcaption>Made with Stable Diffusion.</figcaption>
+      </figure>
+      <div class="header-section-wrapper">
+        <h1>Directory of posted articles</h1>
+        <p>All previous articles are posted here for easier visibility.</p>
+        <ul class="directory-list">
+          <li><a href="articles/featured.html">&#x2605; Meet Prompt Base</a></li>
+          <li><a href="articles/presenting-stable-diffusion.html">Presenting Stable Diffusion</a></li>
+          <li><a href="articles/developers-design-ai.html">Can developers design with AI?</a></li>
+          <li><a href="articles/in-comes-dalle.html">In comes Dall-E</a></li>
+          <li><a href="articles/jobs-and-ai.html">Will AI take people's jobs?</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!--
+      Horizontal bar effect disabled for articles page
+      <div class="horizontal-bar"></div>
+     -->
+  </header>
+
+  <!-- No Main section present on this page as the directory is contained in the splash header-->
+
+</body>
+</html>

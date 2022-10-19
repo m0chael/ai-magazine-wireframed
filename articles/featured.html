@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article | AI Weekly Magazine</title>
+  <link rel="icon" type="image/png" href="../images/favicon/stable_diffusion_favicon.png">
+  <link rel="stylesheet" href="../css/common-styles.css">
+  <link rel="stylesheet" href="../css/article-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+</head>
+<!-- Body classes to be specific about which page the site is on, helps for styling specific pages -->
+<body class="article">
+  <!-- Nav is outside of header as it has sticky position, and needs to be it's own parent container -->
+  <nav>
+    <!-- Search form setup to send to an endpoint called search-magazine.php, which does not exist yet -->
+    <form class="search-form" action="search-magazine.php">
+      <label for="search-text">Search magazine:</label>
+      <input type="text" id="search-text" name="search-text" class="search-text-input" placeholder="Search now...">
+      <input class="search-submit-input" type="submit" value="Search">
+    </form>
+
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a class="selected" href="featured.html">&#x2605;</a></li>
+      <li><a href="../articles.html">Articles</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="../sources.html">Sources</a></li>
+    </ul>
+  </nav>
+
+  <!-- The header section of the one main full article of this website -->
+  <header>
+    <section>
+      <figure>
+        <img src="../images/stable_diffusion_replicate1.jpg" alt="A stable Diffusion Sci-Fi scene depicting a person standing near water with a type of large robot on the right side.">
+        <figcaption>Made with Stable Diffusion.</figcaption>
+      </figure>
+      <div class="header-section-wrapper">
+        <h1>Meet Prompt Base</h1>
+        <p><strong>Author:</strong> <span>Michael Stockermans</span></p>
+        <p><strong>Date:</strong> <time datetime="2022-09-27">September 27th, 2022</time></p>
+        <ul class="tags">
+          <li class="tag">ai</li>
+          <li class="tag">prompts</li>
+          <li class="tag">economy</li>
+          <li class="tag">jobs</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Horizontal bar effect -->
+    <div class="horizontal-bar"></div>
+  </header>
+
+  <!-- The main content of the article page -->
+  <main>
+    <article class="article-full-section">
+      <h2>A new addition to an ecosystem.</h2>
+      <p>Prompt base is for prompt engineers or anyone who wants to become a prompt engineer. This platform allows people to <strong class="highlight">purchase and sell AI prompts</strong> for purchase for various purposes. It is a website which from the my personal opinion is aiming to become an <strong class="highlight">app store</strong> of sorts, but for AI prompts.</p>
+      <h2>What is prompt engineering?</h2>
+      <p>Prompt engineering is the act of generating text base prompts that <strong class="highlight">interact with machine learning AI models</strong> to create either text or image output. This is quickly evolving into creating video output as well. There are wide ranges of usecases for prompt engineers to be able to grab from historical or other references to use for the AI to create unique specialized content directly from strings of text.</p>
+      <figure>
+        <img src="../images/stable_diffusion_replicate6.jpg" alt="A Stable Diffusion Sci-Fi scene depicting some kind of spaceship and a green and yellow field of grass.">
+        <figcaption><strong class="highlight">Prompt:</strong> <q>A futuristic sci fi scene in Miyazaki style with a hint of Monet.</q> Created using Stable Diffusion.</figcaption>
+      </figure>
+      <p>The above image was created as an example of using prompts. This prompt generated all the images seen on the <strong class="highlight">AI Weekly Magazine</strong>. It is interesting to note that there are various controls that can be customized when using Stable Diffusion, however these images were made with all the default settings.</p>
+      <h2>What else can Stable Diffusion create?</h2>
+      <p>Using custom settings, and many developers building off Stable Diffusion with an API already, there are some platforms beyond Prompt Base which are creating AI powered content such as videos! Some can't wait to see what materializes with <strong class="highlight">video generation</strong> using these new machine learning technologies!</p>
+      <h2>Where are things going?</h2>
+      <p>It's hard to say, but one thing is that these technologies are not going away - It seems amazing that it will be possible to describe a video for a product, and use these technologies in the Open Source space to <strong class="highlight">generate your own videos!</strong> It will be great to keep an eye on this space and these technologies to see how things develop going forward.</p>
+    </article>
+  </main>
+
+</body>
+</html>

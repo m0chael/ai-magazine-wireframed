@@ -1,0 +1,117 @@
+.sources main {
+  grid-template-columns: 1fr;
+  padding-top:5rem;
+  padding-bottom:5rem;
+}
+
+/*
+  Table particular styles as seperate CSS stylesheet for organization
+  Table is set to scroll on X axis by default for mobile first view
+*/
+.table-wrapper {
+  overflow-x: scroll;
+}
+
+/*
+  Used snippet from https://css-tricks.com/inclusively-hidden/ for accessibility of table caption reading.
+  This is so the caption of the table is read for screenreaders while being hidden as it has already a title
+  for other users who view without screen readers.
+*/
+table caption {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Table has a set width referenced to VW for scroll X behaviour of the container "table-section" */
+table {
+  border-collapse: collapse;
+  width: 120vw;
+  font-size: 1.1rem;
+}
+
+table caption {
+  text-align: left;
+  font-weight: 600;
+}
+
+table img {
+  width:100%;
+}
+
+table th {
+  background-color: var(--theme-color);
+  color: var(--contrast-color);
+  font-weight: 900;
+  border-right: 1px solid var(--border-effect-color);
+  border-top: 1px solid var(--border-effect-color);
+  border-bottom: 1px solid var(--border-effect-color);
+}
+
+table thead th:first-child {
+  border-bottom: none;
+}
+
+table tbody td {
+  padding: 1rem;
+}
+
+table tbody th {
+  padding: 1rem;
+  text-align: left;
+}
+
+table th:first-child {
+  border-left: 1px solid var(--border-effect-color);
+  border-bottom: 1px solid var(--border-effect-color);
+}
+
+table tr td:first-child {
+  font-weight: 600;
+  background-color: var(--theme-color);
+  border-right: 1px solid var(--border-effect-color);
+  border-left: 1px solid var(--border-effect-color);
+  border-bottom: 1px solid var(--border-effect-color);
+  color: var(--theme-color);
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+table tr td:not(:first-child) {
+  border-right: 1px solid var(--border-effect-color);
+  border-bottom: 1px solid var(--border-effect-color);
+  padding: 0.5rem;
+}
+
+
+/* Tablet view at 700px */
+@media screen and (min-width:700px) {
+  .table-wrapper {
+    overflow-x:unset
+  }
+
+  .table-section {
+    overflow-x: unset;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+/* Desktop View at 1000px */
+@media screen and (min-width:1000px) {
+  .table-section {
+    overflow-x:unset;
+    width: 100%;
+  }
+
+  table {
+    white-space: normal;
+  }
+}

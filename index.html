@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | AI Weekly Magazine</title>
+  <link rel="icon" type="image/png" href="images/favicon/stable_diffusion_favicon.png">
+  <link rel="stylesheet" href="css/common-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+</head>
+<!-- Body classes to be specific about which page the site is on, helps for styling specific pages -->
+<body class="home">
+  <!-- Nav is outside of header as it has sticky position, and needs to be it's own parent container -->
+  <nav>
+    <!-- Search form setup to send to an endpoint called search-magazine.php, which does not exist yet -->
+    <form class="search-form" action="search-magazine.php">
+      <label for="search-text">Search magazine:</label>
+      <input type="text" id="search-text" name="search-text" class="search-text-input" placeholder="Search now...">
+      <input class="search-submit-input" type="submit" value="Search">
+    </form>
+
+    <ul class="menu">
+      <li><a class="selected" href="index.html">Home</a></li>
+      <li><a aria-label="Featured Article" href="articles/featured.html">&#x2605;</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
+
+  <!-- The header of the home page  -->
+  <header>
+    <section>
+      <figure>
+        <img id="slideshow-image" src="images/stable_diffusion_replicate6.jpg" alt="A Stable Diffusion Sci-Fi scene depicting some kind of spaceship and a green and yellow field of grass.">
+        <figcaption>Made with Stable Diffusion.</figcaption>
+      </figure>
+      <div class="header-section-wrapper">
+        <h1>AI Weekly Magazine</h1>
+        <p>The weekly AI information magazine, brought to you by the AI Weekly Team.</p>
+        <button id="slideshow-control" onclick="slideShowControl()">Stop Slideshow</button>
+      </div>
+    </section>
+
+    <!-- Horizontal bar effect -->
+    <div class="horizontal-bar"></div>
+  </header>
+
+  <!-- Main contents of the page containing articles -->
+  <main>
+    <!-- First article has some custom styles for the grid-column -->
+    <article>
+      <div class="article-header-section">
+        <div class="first-child-wrapper">
+          <a href="articles/featured.html"><h2>Meet Prompt Base</h2></a>
+          <p><strong>Author:</strong> <span>Michael Stockermans</span></p>
+          <p><strong>Date:</strong> <time datetime="2022-09-27">September 27th, 2022</time></p>
+          <ul class="tags">
+            <li class="tag">ai</li>
+            <li class="tag">prompts</li>
+            <li class="tag">economy</li>
+            <li class="tag">jobs</li>
+          </ul>
+        </div>
+
+        <figure>
+          <img src="images/stable_diffusion_replicate1.jpg" alt="A stable Diffusion Sci-Fi scene depicting a person standing near water with a type of large robot on the right side.">
+          <figcaption>Made with Stable Diffusion.</figcaption>
+        </figure>
+      </div>
+
+      <div class="article-excerpt-section">
+        <p>Prompt base is for prompt engineers or anyone who wants to become a prompt engineer. This platform allows people to purchase and sell AI prompts for purchase for various purposes. It is a website which from the my personal opinion is aiming to become an app store of sorts, but for AI prompts...</p>
+        <a href="articles/featured.html">Read More...</a>
+      </div>
+    </article>
+
+    <article>
+      <div class="article-header-section">
+        <a href="articles/presenting-stable-diffusion.html"><h2>Presenting Stable Diffusion</h2></a>
+        <p><strong>Author:</strong> <span>Michael Stockermans</span></p>
+        <p><strong>Date:</strong> <time datetime="2022-09-27">September 27th, 2022</time></p>
+        <ul class="tags">
+          <li class="tag">ai</li>
+          <li class="tag">platform</li>
+        </ul>
+        <figure>
+          <img src="images/stable_diffusion_replicate9.jpg" alt="A Stable Diffusion Sci-Fi scene depicting a spaceship lying in water with some large rectangular pipes going up into the air.">
+          <figcaption>Made with Stable Diffusion.</figcaption>
+        </figure>
+      </div>
+
+      <div class="article-excerpt-section">
+        <p>Stable diffusion is an up and coming machine learning platform which enables creators, developers, designers, and anyone else interested to create AI powered content...</p>
+        <a href="articles/presenting-stable-diffusion.html">Read More...</a>
+      </div>
+    </article>
+
+    <!--
+      The below articles all contain custom original written titles and excerpts
+      with links to the main one article of this website
+    -->
+    <article>
+      <div class="article-header-section">
+        <a href="articles/developers-design-ai.html"><h2>Can developers design with AI?</h2></a>
+        <p><strong>Author:</strong> <span>Michael Stockermans</span></p>
+        <p><strong>Date:</strong> <time datetime="2022-09-27">September 27th, 2022</time></p>
+        <ul class="tags">
+          <li class="tag">ai</li>
+          <li class="tag">design</li>
+          <li class="tag">developers</li>
+        </ul>
+        <figure>
+          <img src="images/stable_diffusion_replicate2.jpg" alt="A Stable Diffusion Sci-Fi scene depending some artifact shards being suspended in the air on top of water.">
+          <figcaption>Made with Stable Diffusion.</figcaption>
+        </figure>
+      </div>
+
+      <div class="article-excerpt-section">
+        <p>Some people have started using AI powered content using prompts to start getting design inspiration for UI/UX of web apps and websites. Will this trend end, or is it just beginning? Only time will tell...</p>
+        <a href="articles/developers-design-ai.html">Read More...</a>
+      </div>
+    </article>
+
+    <article>
+      <div class="article-header-section">
+        <a href="articles/in-comes-dalle.html"><h2>In comes Dall-E</h2></a>
+        <p><strong>Author:</strong> <span>Michael Stockermans</span></p>
+        <p><strong>Date:</strong> <time datetime="2022-09-27">September 27th, 2022</time></p>
+        <ul class="tags">
+          <li class="tag">ai</li>
+          <li class="tag">platform</li>
+        </ul>
+        <figure>
+          <img src="images/stable_diffusion_replicate3.jpg" alt="A Stable Diffusion Sci-Fi scene with some rail track type objects surrounded by greenery and a futuristic building in the center.">
+          <figcaption>Made with Stable Diffusion.</figcaption>
+        </figure>
+      </div>
+
+      <div class="article-excerpt-section">
+        <p>Dall-E was a highly anticipated project which enables text to image generation. Although there is a waitlist, it appears that many users are receiving waitlist invites...</p>
+        <a href="articles/in-comes-dalle.html">Read More...</a>
+      </div>
+    </article>
+
+    <article>
+      <div class="article-header-section">
+        <a href="articles/jobs-and-ai.html"><h2>Will AI take people's jobs?</h2></a>
+        <p><strong>Author:</strong> <span>Michael Stockermans</span></p>
+        <p><strong>Date:</strong> <time datetime="2022-09-27">September 27th, 2022</time></p>
+        <ul class="tags">
+          <li class="tag">ai</li>
+          <li class="tag">jobs</li>
+          <li class="tag">economy</li>
+        </ul>
+        <figure>
+          <img src="images/stable_diffusion_replicate4.jpg" alt="A Stable Diffusion Sci-Fi scene with some moonlight, water, and futuristic buildings surrounding.">
+          <figcaption>Made with Stable Diffusion.</figcaption>
+        </figure>
+      </div>
+
+      <div class="article-excerpt-section">
+        <p>Many anticipate automation and AI to change jobs. Although this may be true in some cases, the opportunity presents a different parallel outcome along side. This includes new jobs that didn't exist before due to the automation and AI...</p>
+        <a href="articles/jobs-and-ai.html">Read More...</a>
+      </div>
+    </article>
+  </main>
+
+<script src="js/index-slideshow.js"></script>
+</body>
+</html>

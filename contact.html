@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | AI Weekly Magazine</title>
+  <link rel="icon" type="image/png" href="images/favicon/stable_diffusion_favicon.png">
+  <link rel="stylesheet" href="css/common-styles.css">
+  <link rel="stylesheet" href="css/contact-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+</head>
+<!-- Body classes to be specific about which page the site is on, helps for styling specific pages -->
+<body class="contact">
+  <!-- Nav is outside of header as it has sticky position, and needs to be it's own parent container -->
+  <nav>
+    <!-- Search form setup to send to an endpoint called search-magazine.php, which does not exist yet -->
+    <form class="search-form" action="search-magazine.php">
+      <label for="search-text">Search magazine:</label>
+      <input type="text" id="search-text" name="search-text" class="search-text-input" placeholder="Search now...">
+      <input class="search-submit-input" type="submit" value="Search">
+    </form>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="articles/featured.html">&#x2605;</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a class="selected" href="contact.html">Contact</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header section of the contact form -->
+  <header>
+    <section>
+      <figure>
+        <img src="images/stable_diffusion_replicate7.jpg" alt="A Stable Diffusion sci-fi scene which is in a Monet style with some small mountains in the background.">
+        <figcaption>Made with Stable Diffusion.</figcaption>
+      </figure>
+      <div class="header-section-wrapper">
+        <h1>Contact the Team</h1>
+        <p>We respond to all inquiries. Please allow up to 48 hours for a reply. Thank you!</p>
+      </div>
+    </section>
+
+    <!-- Horizontal bar effect -->
+    <div class="horizontal-bar"></div>
+  </header>
+
+  <!-- The main section of the contact form, containing the contact form -->
+  <main>
+    <!-- Form from formspree.io as "Simple Contact Form" template, functional -->
+    <form name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xqkjqoyo" method="post">
+      <fieldset>
+        <label for="full-name">Full Name</label>
+        <input type="text" name="name" id="full-name" placeholder="Your full name" required="">
+        <label for="email-address">Email</label>
+        <input type="email" name="_replyto" id="email-address" placeholder="Your email" required="">
+        <label for="message">Message</label>
+        <textarea rows="5" name="message" id="message" placeholder="Enter your message for the team here!" required></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+      </fieldset>
+      <input class="submit-button" type="submit" value="Submit">
+    </form>
+  </main>
+
+</body>
+</html>

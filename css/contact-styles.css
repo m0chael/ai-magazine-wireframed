@@ -1,0 +1,56 @@
+.contact main {
+  padding-top:5rem;
+  padding-bottom:5rem;
+}
+
+main form fieldset {
+  display: grid;
+  grid-template-columns: 1fr;
+  border:1px solid var(--theme-color);
+  padding:2rem;
+  margin-bottom:1rem;
+  border-radius: 0.5rem;
+}
+
+main form input {
+  padding:0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border:1px solid var(--theme-color);
+}
+
+main form .submit-button {
+  width:100%;
+  background-color:var(--theme-color);
+  color:var(--contrast-color);
+  padding:0.75rem 1rem 0.75rem 1rem;
+  display: block;
+  background-color: var(--theme-color);
+  color:var(--contrast-color);
+  border-radius: 0.5rem;
+  outline:none;
+  border:1px solid var(--theme-color);
+  cursor: pointer;
+}
+
+main form .submit-button:hover {
+  background-color: var(--link-hover-color);
+  color: var(--theme-color);
+  border:1px solid var(--theme-color);
+}
+
+textarea {
+  padding:0.5rem 1rem 0.5rem 1rem;
+  resize:none;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width:700px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  main form {
+    width:100%;
+    grid-column: 2/5;
+    margin:0 auto;
+  }
+}

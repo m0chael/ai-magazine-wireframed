@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article | AI Weekly Magazine</title>
+  <link rel="icon" type="image/png" href="../images/favicon/stable_diffusion_favicon.png">
+  <link rel="stylesheet" href="../css/common-styles.css">
+  <link rel="stylesheet" href="../css/article-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+</head>
+<!-- Body classes to be specific about which page the site is on, helps for styling specific pages -->
+<body class="article">
+  <!-- Nav is outside of header as it has sticky position, and needs to be it's own parent container -->
+  <nav>
+    <!-- Search form setup to send to an endpoint called search-magazine.php, which does not exist yet -->
+    <form class="search-form" action="search-magazine.php">
+      <label for="search-text">Search magazine:</label>
+      <input type="text" id="search-text" name="search-text" class="search-text-input" placeholder="Search now...">
+      <input class="search-submit-input" type="submit" value="Search">
+    </form>
+
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="featured.html">&#x2605;</a></li>
+      <li><a class="selected" href="../articles.html">Articles</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="../sources.html">Sources</a></li>
+    </ul>
+  </nav>
+
+  <!-- The header section of a placeholder article for this website -->
+  <header>
+    <section>
+      <figure>
+        <img src="../images/stable_diffusion_replicate9.jpg" alt="A Stable Diffusion Sci-Fi scene with some moonlight, water, and futuristic buildings surrounding.">
+        <figcaption>Made with Stable Diffusion.</figcaption>
+      </figure>
+      <div class="header-section-wrapper">
+        <h1>Presenting Stable Diffusion</h1>
+        <p><strong>Author:</strong> <span>Michael Stockermans</span></p>
+        <p><strong>Date:</strong> <time datetime="2022-09-27">September 27th, 2022</time></p>
+        <ul class="tags">
+          <li class="tag">ai</li>
+          <li class="tag">platform</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Horizontal bar effect -->
+    <div class="horizontal-bar"></div>
+  </header>
+
+  <!-- The main content of the article placeholder page -->
+  <main>
+    <article class="article-full-section">
+      <h2>Open source</h2>
+      <p>Stable diffusion is an up and coming machine learning platform which enables creators, developers, designers, and anyone else interested to create AI powered content...</p>
+      <h2>This is an extra placeholder article page</h2>
+    </article>
+  </main>
+
+</body>
+</html>
