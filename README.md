@@ -4,4 +4,4 @@ A fully responsive AI magazine custom made in HTML and CSS with a sources page a
 
 ## Instructions
 
-Launch the index.html locally, or please see https://mics.link/magazine/ for a live version.
+Launch the index.html locally.
