@@ -8,6 +8,17 @@
   <link rel="icon" type="image/png" href="images/favicon/stable_diffusion_favicon.png">
   <link rel="stylesheet" href="css/common-styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+  <!-- integrate jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Integrate lightbox lity -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js" async></script>
+  <style>
+    .inline-lity {
+      display: inline-block;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <!-- Body classes to be specific about which page the site is on, helps for styling specific pages -->
 <body class="home">
@@ -63,11 +74,12 @@
             <li class="tag">jobs</li>
           </ul>
         </div>
-
-        <figure>
-          <img src="images/stable_diffusion_replicate1.jpg" alt="A stable Diffusion Sci-Fi scene depicting a person standing near water with a type of large robot on the right side.">
-          <figcaption>Made with Stable Diffusion.</figcaption>
-        </figure>
+          <figure>
+            <a class="inline-lity" data-lity data-lity-target="images/stable_diffusion_replicate1.jpg">
+              <img src="images/stable_diffusion_replicate1.jpg" alt="A stable Diffusion Sci-Fi scene depicting a person standing near water with a type of large robot on the right side.">
+              <figcaption>Made with Stable Diffusion.</figcaption>
+            </a>
+          </figure>
       </div>
 
       <div class="article-excerpt-section">
@@ -86,8 +98,10 @@
           <li class="tag">platform</li>
         </ul>
         <figure>
-          <img src="images/stable_diffusion_replicate9.jpg" alt="A Stable Diffusion Sci-Fi scene depicting a spaceship lying in water with some large rectangular pipes going up into the air.">
-          <figcaption>Made with Stable Diffusion.</figcaption>
+          <a class="inline-lity" data-lity data-lity-target="images/stable_diffusion_replicate9.jpg">
+            <img src="images/stable_diffusion_replicate9.jpg" alt="A Stable Diffusion Sci-Fi scene depicting a spaceship lying in water with some large rectangular pipes going up into the air.">
+            <figcaption>Made with Stable Diffusion.</figcaption>
+          </a>
         </figure>
       </div>
 
@@ -112,8 +126,10 @@
           <li class="tag">developers</li>
         </ul>
         <figure>
-          <img src="images/stable_diffusion_replicate2.jpg" alt="A Stable Diffusion Sci-Fi scene depending some artifact shards being suspended in the air on top of water.">
-          <figcaption>Made with Stable Diffusion.</figcaption>
+          <a class="inline-lity" data-lity data-lity-target="images/stable_diffusion_replicate2.jpg">
+            <img src="images/stable_diffusion_replicate2.jpg" alt="A Stable Diffusion Sci-Fi scene depending some artifact shards being suspended in the air on top of water.">
+            <figcaption>Made with Stable Diffusion.</figcaption>
+          </a>
         </figure>
       </div>
 
@@ -133,8 +149,10 @@
           <li class="tag">platform</li>
         </ul>
         <figure>
-          <img src="images/stable_diffusion_replicate3.jpg" alt="A Stable Diffusion Sci-Fi scene with some rail track type objects surrounded by greenery and a futuristic building in the center.">
-          <figcaption>Made with Stable Diffusion.</figcaption>
+          <a class="inline-lity" data-lity data-lity-target="images/stable_diffusion_replicate3.jpg">
+            <img src="images/stable_diffusion_replicate3.jpg" alt="A Stable Diffusion Sci-Fi scene with some rail track type objects surrounded by greenery and a futuristic building in the center.">
+            <figcaption>Made with Stable Diffusion.</figcaption>
+          </a>
         </figure>
       </div>
 
@@ -155,8 +173,10 @@
           <li class="tag">economy</li>
         </ul>
         <figure>
-          <img src="images/stable_diffusion_replicate4.jpg" alt="A Stable Diffusion Sci-Fi scene with some moonlight, water, and futuristic buildings surrounding.">
-          <figcaption>Made with Stable Diffusion.</figcaption>
+          <a class="inline-lity" data-lity data-lity-target="images/stable_diffusion_replicate4.jpg">
+            <img src="images/stable_diffusion_replicate4.jpg" alt="A Stable Diffusion Sci-Fi scene with some moonlight, water, and futuristic buildings surrounding.">
+            <figcaption>Made with Stable Diffusion.</figcaption>
+          </a>
         </figure>
       </div>
 
